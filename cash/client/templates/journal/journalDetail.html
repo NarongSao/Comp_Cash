@@ -1,0 +1,61 @@
+<!--Journal Temporary-->
+<template name="cash_journalDetail">
+    <div class="row">
+        <div class="col-sm-6" style="padding-right:2px;padding-left:2px;">
+            <b>Chart of Account</b>
+        </div> 
+            <div class="col-sm-5" style="padding-right:2px;padding-left:2px;">
+                <b>Amount</b>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6" style="padding-right:2px;padding-left:2px;">
+            <div class="form-group">
+                <select id="tmpAccount" class="tmpAccount"  name="tmpAccount" style="width: 100%;">
+                    {{#each chartAccount}}
+                        <option value="{{code}} | {{name}} | {{accountType}}">{{code}} | {{name}} | <span
+                                class="pull-right">{{accountType}}</span></option>
+                    {{/each}}
+                </select>
+            </div>
+        </div>
+       
+            <div class="col-sm-5" style="padding-right:2px;padding-left:2px;">
+                <div class="form-group">
+                    <input type="text" step="1" name="tmpAmount" class="form-control tmpAmount" placeholder="Amount">
+                </div>
+            </div>
+
+        <div class="col-sm-1" style="padding-right:0px;padding-left:4px;">
+            <button type="button" class="btn btn-primary addItem" {{cssClassForAddMore}}>+</button>
+        </div>
+    </div>
+    <hr>
+    {{#each journals}}
+        <div class="row listJournal">
+            <div class="col-sm-6"
+                 style="padding-right:2px;padding-left:2px;">{{> afQuickField name=(keyArgs @index "accountOrg") value=accountOrg readonly="true" label=false class="input-sm account" type="text"}}</div>
+            
+                <div class="col-sm-5" style="padding-right:2px;padding-left:2px;">
+                    <div style="padding-right:2px;padding-left:2px;">{{> afQuickField name=(keyArgs @index "amount")  value=amount label=false type="text" class="amount input-sm" readonly="true"}}</div>
+                </div>
+               
+            <div class="col-sm-1" style="padding-right:1px;padding-left:4px;">
+                <button type="button" class="btn btn-danger removeItem input-sm">-</button>
+            </div>
+        </div>
+    {{/each}}
+
+
+
+    <div class="row">
+        <div class="col-sm-6" style="padding-right:1px;padding-left:0px;text-align: right;">
+            <b>Total :</b>
+        </div>
+       
+            <div class="col-sm-6" style="padding-right:1px;padding-left:0px;">
+             {{> afQuickField name="total" value=total label=false readonly="true"}}
+            </div>
+       
+    </div>
+</template>

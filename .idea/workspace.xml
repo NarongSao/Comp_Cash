@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b201cbe6-3ead-471a-b7b7-1fe69d46d8a9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cash/both/collections/journal.js" afterPath="$PROJECT_DIR$/cash/both/collections/journal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cash/both/tabulars/journal.js" afterPath="$PROJECT_DIR$/cash/both/tabulars/journal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cash/client/routers/journal.js" afterPath="$PROJECT_DIR$/cash/client/routers/journal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cash/client/templates/chartAccount/chartAccount.html" afterPath="$PROJECT_DIR$/cash/client/templates/chartAccount/chartAccount.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cash/client/templates/chartAccount/chartAccount.js" afterPath="$PROJECT_DIR$/cash/client/templates/chartAccount/chartAccount.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cash/client/templates/closingBalance/closingBalance.html" afterPath="$PROJECT_DIR$/cash/client/templates/closingBalance/closingBalance.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cash/client/templates/customer/customer.html" afterPath="$PROJECT_DIR$/cash/client/templates/customer/customer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cash/client/templates/journal/journal.html" afterPath="$PROJECT_DIR$/cash/client/templates/journal/journal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cash/client/templates/journal/journal.js" afterPath="$PROJECT_DIR$/cash/client/templates/journal/journal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cash/client/templates/reports/balanceOutStanding/balanceOutStanding.html" afterPath="$PROJECT_DIR$/cash/client/templates/reports/balanceOutStanding/balanceOutStanding.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cash/client/templates/reports/expense/expense.html" afterPath="$PROJECT_DIR$/cash/client/templates/reports/expense/expense.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cash/client/templates/reports/income/income.html" afterPath="$PROJECT_DIR$/cash/client/templates/reports/income/income.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cash/client/templates/reports/journalReport/journalReport.html" afterPath="$PROJECT_DIR$/cash/client/templates/reports/journalReport/journalReport.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cash/client/templates/reports/profitLost/profitLost.html" afterPath="$PROJECT_DIR$/cash/client/templates/reports/profitLost/profitLost.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cash/client/templates/staff/staff.html" afterPath="$PROJECT_DIR$/cash/client/templates/staff/staff.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cash/client/templates/staff/staff.js" afterPath="$PROJECT_DIR$/cash/client/templates/staff/staff.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cash/server/collectionsHook/journal.js" afterPath="$PROJECT_DIR$/cash/server/collectionsHook/journal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cash/server/publications/publications.js" afterPath="$PROJECT_DIR$/cash/server/publications/publications.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/client/app/compatibility/bs3-daterangepicker/daterangepicker.js" afterPath="$PROJECT_DIR$/cpanel/client/app/compatibility/bs3-daterangepicker/daterangepicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/client/app/config/account.js" afterPath="$PROJECT_DIR$/cpanel/client/app/config/account.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/client/app/libraries/date_time_picker.js" afterPath="$PROJECT_DIR$/cpanel/client/app/libraries/date_time_picker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/client/app/libraries/render_layout.js" afterPath="$PROJECT_DIR$/cpanel/client/app/libraries/render_layout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/client/app/lists/list.js" afterPath="$PROJECT_DIR$/cpanel/client/app/lists/list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/client/app/lists/list_for_report.js" afterPath="$PROJECT_DIR$/cpanel/client/app/lists/list_for_report.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/client/app/startup/material_init.js" afterPath="$PROJECT_DIR$/cpanel/client/app/startup/material_init.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/client/css/theme.css" afterPath="$PROJECT_DIR$/cpanel/client/css/theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/client/templates/_layout/help/help.css" afterPath="$PROJECT_DIR$/cpanel/client/templates/_layout/help/help.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/client/templates/_layout/help/main.html" afterPath="$PROJECT_DIR$/cpanel/client/templates/_layout/help/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/client/templates/_layout/includes/tabularAction.html" afterPath="$PROJECT_DIR$/cpanel/client/templates/_layout/includes/tabularAction.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/client/templates/_layout/main/main.html" afterPath="$PROJECT_DIR$/cpanel/client/templates/_layout/main/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/client/templates/backup_restore/backup_restore.js" afterPath="$PROJECT_DIR$/cpanel/client/templates/backup_restore/backup_restore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/client/templates/exchange/exchange.js" afterPath="$PROJECT_DIR$/cpanel/client/templates/exchange/exchange.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/client/templates/user/user.html" afterPath="$PROJECT_DIR$/cpanel/client/templates/user/user.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/common/collections/backup_restore.js" afterPath="$PROJECT_DIR$/cpanel/common/collections/backup_restore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/common/collections/event_report.js" afterPath="$PROJECT_DIR$/cpanel/common/collections/event_report.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/common/collections/setting.js" afterPath="$PROJECT_DIR$/cpanel/common/collections/setting.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/common/collections/user.js" afterPath="$PROJECT_DIR$/cpanel/common/collections/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/common/collections/welcome.js" afterPath="$PROJECT_DIR$/cpanel/common/collections/welcome.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/common/tabulars/user.js" afterPath="$PROJECT_DIR$/cpanel/common/tabulars/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/server/collections_hook/branch.js" afterPath="$PROJECT_DIR$/cpanel/server/collections_hook/branch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/server/collections_hook/company.js" afterPath="$PROJECT_DIR$/cpanel/server/collections_hook/company.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/server/collections_hook/exchange.js" afterPath="$PROJECT_DIR$/cpanel/server/collections_hook/exchange.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/server/collections_hook/setting.js" afterPath="$PROJECT_DIR$/cpanel/server/collections_hook/setting.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/server/fixtures/user.js" afterPath="$PROJECT_DIR$/cpanel/server/fixtures/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpanel/server/methods/user.js" afterPath="$PROJECT_DIR$/cpanel/server/methods/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/app-dump/.npm/package/npm-shrinkwrap.json" afterPath="$PROJECT_DIR$/packages/app-dump/.npm/package/npm-shrinkwrap.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/app-dump/package.js" afterPath="$PROJECT_DIR$/packages/app-dump/package.js" />
+    </list>
+    <ignored path="cash.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="cash" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/cash/client/templates/_layout/sidebar_menu.html" />
+        <option value="$PROJECT_DIR$/cpanel/client/templates/_layout/main/main.html" />
+        <option value="$PROJECT_DIR$/.meteor/packages" />
+        <option value="$PROJECT_DIR$/cash/client/templates/journal/journalDetail.html" />
+        <option value="$PROJECT_DIR$/cash/server/collectionsHook/journal.js" />
+        <option value="$PROJECT_DIR$/cash/client/routers/journal.js" />
+        <option value="$PROJECT_DIR$/cash/both/tabulars/journal.js" />
+        <option value="$PROJECT_DIR$/cash/client/templates/journal/journal.js" />
+        <option value="$PROJECT_DIR$/cash/client/templates/journal/journal.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
+    <option name="height" value="1026" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="enabled" />
+    <property name="js.meteor.project" value="true" />
+    <property name="js.meteor.library.was.enabled" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\App\BTB Meteor Project\cash\cash\client\templates\_layout" />
+    </key>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b201cbe6-3ead-471a-b7b7-1fe69d46d8a9" name="Default" comment="" />
+      <created>1459773042374</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1459773042374</updated>
+      <workItem from="1459773044548" duration="1761000" />
+      <workItem from="1459843752665" duration="1300000" />
+      <workItem from="1460942811508" duration="4642000" />
+      <workItem from="1462262483612" duration="6320000" />
+      <workItem from="1462354970194" duration="567000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14590000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1344994" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27880183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18494272" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24330357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cash/client/templates/journal/journal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cash/client/templates/journal/journal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4862">
+          <caret line="187" column="33" selection-start-line="187" selection-start-column="33" selection-end-line="187" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpanel/client/templates/_layout/main/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cash/client/templates/_layout/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpanel/client/templates/home/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpanel/client/templates/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpanel/client/routers/setting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cash/client/templates/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1150">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpanel/client/routers/company.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpanel/client/routers/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cash/client/routers/chartAccount.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpanel/client/templates/_layout/main/sidebar_menu_tool.html" />
+    <entry file="file://$PROJECT_DIR$/cpanel/client/templates/_layout/main/sidebar.js" />
+    <entry file="file://$PROJECT_DIR$/cpanel/client/templates/_layout/main/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpanel/client/templates/_layout/main/sidebar_menu.html" />
+    <entry file="file://$PROJECT_DIR$/cpanel/client/templates/_layout/main/sidebar_menu_tool.js" />
+    <entry file="file://$PROJECT_DIR$/cpanel/client/templates/_layout/main/sidebar.html" />
+    <entry file="file://$PROJECT_DIR$/cash/client/templates/_layout/sidebar_menu.html" />
+    <entry file="file://$PROJECT_DIR$/cash/client/templates/_layout/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpanel/client/templates/_layout/main/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.meteor/packages">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cash/both/collections/journal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cash/both/tabulars/journal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cash/server/methods/migrate/journalEntry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cash/client/routers/journal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cash/client/app/subscription/global.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cash/client/templates/journal/journalDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cash/server/collectionsHook/journal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cash/client/templates/journal/journalDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cash/client/templates/chartAccount/chartAccount.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cash/client/templates/closingBalance/closingBalance.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="79" column="11" selection-start-line="79" selection-start-column="11" selection-end-line="79" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cash/client/templates/journal/journal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4862">
+          <caret line="187" column="33" selection-start-line="187" selection-start-column="33" selection-end-line="187" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cash/client/templates/journal/journal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
