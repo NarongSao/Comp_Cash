@@ -32,10 +32,7 @@ Cash.TabularTable.Journal = new Tabular.Table({
             }
         },
         {
-            data: "staff", title: "Staff",
-            render: function (val, type, doc) {
-                return Cash.Collection.Staff.findOne({_id: val}).name;
-            }
+            data: "staffDoc.name", title: "Staff"
         },
         {data: "memo", title: "Description"},
 

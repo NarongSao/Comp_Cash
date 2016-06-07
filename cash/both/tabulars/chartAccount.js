@@ -25,6 +25,6 @@ Cash.TabularTable.ChartAccount = new Tabular.Table({
         }
 
     ],
-    order: ['0', 'desc'],
+    order: ['1', 'desc'],
     pagingType: "full_numbers"
 });

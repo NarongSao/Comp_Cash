@@ -92,6 +92,7 @@ indexTpl.events({
             }
         });
         var self=this;
+        console.log(self);
         if (self.journalDate > openingBalance.date) {
 
             alertify.journal(fa("pencil", "Transaction"), renderTemplate(

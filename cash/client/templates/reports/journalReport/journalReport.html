@@ -13,6 +13,10 @@
                     {{> afQuickField name='date'}}
                 </div>
 
+                <div class="col-md-6">
+                    {{> afQuickField name='staff'}}
+                </div>
+
             </div>
             <button type="submit" class="btn btn-primary">{{fa "file-text"}} Generate</button>
             <button type="reset" class="btn btn-default">{{fa "refresh"}} Reset</button>
@@ -76,7 +80,7 @@
                     </thead>
                     <tbody class="content-body">
                     {{#each content}}
-                        <tr>
+                        <tr  class="journalRow">
                             <td width="30" align="center">{{order}}</td>
                             <td width="70" align="center">{{formatDate journalDate}}</td>
                             <td width="70" align="center">{{substrVoucher voucherId}}</td>

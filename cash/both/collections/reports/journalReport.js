@@ -24,6 +24,16 @@ Cash.Schema.JournalReport = new SimpleSchema({
                 return Cash.List.currency();
             }
         }
+    },   staff: {
+        type: String,
+        label: "Staff",
+        autoform: {
+            type: "select2",
+            defaultValue: "All",
+            options: function () {
+                return Cash.List.staff();
+            }
+        }
     },
     date: {
         type: String,

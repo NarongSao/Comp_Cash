@@ -1,5 +1,11 @@
 var reportTpl = Template.cash_journalReport,
-  generateTpl = Template.cash_journalReportGen;
+  generateTpl = Template.cash_journalReportGen,
+    updateTpl=Template.cash_journalUpdate;
+
+
+state= new ReactiveObj({
+  journalId: ""
+})
 
 reportTpl.onRendered(function() {
   var name = $('[name="date"]');
@@ -17,6 +23,8 @@ generateTpl.onCreated(function() {
     title: 'journalReport',
     description: 'journalReport'
   });
+
+  createNewAlertify('journal');
 });
 generateTpl.helpers({
   options: function() {
@@ -82,4 +90,38 @@ generateTpl.helpers({
 
     return data;
   }
+});
+
+
+
+//Event
+generateTpl.events({
+  'dblclick .journalRow': function (e, t) {
+    var openingBalance = Cash.Collection.OpeningClosingBalance.findOne({}, {
+      sort: {
+        date: -1
+      }
+    });
+    var self=this;
+    state.set('journalId',self.journalId);
+
+    var doc=Cash.Collection.Journal.findOne(self._id);
+    if (self.journalDate > openingBalance.date) {
+
+      alertify.journal(fa("pencil", "Transaction"), renderTemplate(
+          updateTpl, doc))
+          .maximize();
+    } else {
+      alertify.warning("Can not Update! You already closing balance!!!")
+    }
+
+  }
+});
+
+
+updateTpl.onCreated(function () {
+  var id=state.get('journalId');
+  this.autorun(()=> {
+    this.subscribe('cash_journalById', {_id: id});
+  });
 });

@@ -44,6 +44,10 @@ Meteor.methods({
     if (self.branchId != "All") {
       selector.branchId = self.branchId;
     }
+
+    if(self.staff!="All"){
+      selector.staff = self.staff;
+    }
     var i = 1;
     var journal = Cash.Collection.Journal.find(selector, {
       sort: {

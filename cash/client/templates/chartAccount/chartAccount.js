@@ -86,7 +86,7 @@ insertTpl.helpers({
             return Cash.Collection.AccountType.find()
                 .map(function (obj) {
                     return {
-                        label: obj._id + " | " + obj.name,
+                        label: obj.name,
                         value: obj._id
                     };
                 });
@@ -95,7 +95,7 @@ insertTpl.helpers({
             var obj = Cash.Collection.AccountType.findOne(Session.get(
                 'accountTypeId'));
             return [{
-                label: obj._id + " | " + obj.name,
+                label: obj.name,
                 value: obj._id
             }];
             //return Acc.List.accountType();
@@ -154,7 +154,7 @@ updateTpl.helpers({
             return Cash.Collection.AccountType.find()
                 .map(function (obj) {
                     return {
-                        label: obj._id + " | " + obj.name,
+                        label: obj.name,
                         value: obj._id
                     };
                 });
@@ -163,7 +163,7 @@ updateTpl.helpers({
             var obj = Cash.Collection.AccountType.findOne(Session.get(
                 'accountTypeId'));
             return [{
-                label: obj._id + " | " + obj.name,
+                label: obj.name,
                 value: obj._id
             }];
             //return Acc.List.accountType();

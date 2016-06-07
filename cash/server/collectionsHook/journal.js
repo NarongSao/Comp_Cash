@@ -17,11 +17,14 @@ Cash.Collection.Journal.before.insert(function (userId, doc) {
         }
     });
 
+    var staffDoc=Cash.Collection.Staff.findOne(doc.staff);
+
     var date = moment(doc.journalDate).format("YYMM");
     var prefix = doc.branchId + "-" + date;
     doc._id = idGenerator.genWithPrefix(Cash.Collection.Journal,
         prefix, 6);
     doc.transaction=transaction;
+    doc.staffDoc=staffDoc;
 });
 
 
@@ -41,6 +44,11 @@ Cash.Collection.Journal.before.update(function (userId, doc, fieldNames, modifie
     });
 
     modifier.$set.transaction = transaction;
+    var staffDoc=Cash.Collection.Staff.findOne(modifier.$set.staff);
+    modifier.$set.staffDoc=staffDoc;
+
+
+
 });
 
 
