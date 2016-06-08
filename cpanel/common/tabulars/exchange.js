@@ -8,7 +8,7 @@ Cpanel.TabularTable.Exchange = new Tabular.Table({
     ],
     order: [['1', 'desc']],
     columns: [
-        {title: '<i class="fa fa-bars"></i>', tmpl: Meteor.isClient && Template.cpanel_exchangeAction},
+        {title: '<i class="fa fa-bars"></i>', tmpl: Meteor.isClient && Template.Cpanel_exchangeAction},
         {
             data: "exDate",
             title: "Date",

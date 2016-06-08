@@ -4,7 +4,7 @@ cpanelRoutes.route('/exchange', {
         this.register('cpanel_exchange', Meteor.subscribe('cpanel_exchange'));
     },
     action: function (params, queryParams) {
-        Layout.main('cpanel_exchange');
+        Layout.main('Cpanel_exchange');
     },
     breadcrumb: {
         //params: ['id'],

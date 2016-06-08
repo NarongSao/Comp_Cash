@@ -1,41 +1,31 @@
 // Declare template
-var indexTpl = Template.cpanel_exchange,
-    insertTpl = Template.cpanel_exchangeInsert,
-    updateTpl = Template.cpanel_exchangeUpdate,
-    showTpl = Template.cpanel_exchangeShow;
+let indexTpl = Template.Cpanel_exchange,
+    newTpl = Template.Cpanel_exchangeNew,
+    editTpl = Template.Cpanel_exchangeEdit,
+    showTpl = Template.Cpanel_exchangeShow;
 
 // Index
 indexTpl.onCreated(function () {
-    // SEO
-    SEO.set({
-        title: 'Exchange',
-        description: 'Description for this page'
-    });
-});
-
-indexTpl.onRendered(function () {
     // Create new  alertify
     createNewAlertify("exchange", {size: 'lg'});
 });
 
 indexTpl.events({
-    'click .insert': function (e, t) {
-        alertify.exchange(fa("plus", "Exchange"), renderTemplate(insertTpl));
+    'click .js-create' (e, t) {
+        alertify.exchange(fa("plus", "Exchange"), renderTemplate(newTpl));
     },
-    'click .update': function (e, t) {
-        var data = Cpanel.Collection.Exchange.findOne(this._id);
-        data.exDate = moment(data.exDate).format('YYYY-MM-DD');
-        alertify.exchange(fa("pencil", "Exchange"), renderTemplate(updateTpl, data));
+    'click .js-update' (e, t) {
+        alertify.exchange(fa("pencil", "Exchange"), renderTemplate(editTpl, this));
     },
-    'click .remove': function (e, t) {
+    'click .js-destroy' (e, t) {
         var id = this._id;
 
         alertify.confirm(
-            fa("remove", "Exchange"),
-            "Are you sure to delete [" + this.dateTime + "]?",
+            fa("remove", "User"),
+            "Are you sure to delete [" + id + "]?",
             function () {
 
-                Cpanel.Collection.Exchange.remove(id, function (error) {
+                Cpanel.Collection.Exchange.remove( id, function(error) {
                     if (error) {
                         alertify.error(error.message);
                     } else {
@@ -44,42 +34,71 @@ indexTpl.events({
                 });
             },
             null);
+
+
+      /*  destroyAction(
+            Cpanel.Collection.Exchange,
+            {_id: this._id},
+            {title: 'Exchange', item: moment(self.exDate).format('DD/MM/YYYY')}
+        );*/
     },
-    'click .show': function (e, t) {
-        this.ratesVal = JSON.stringify(this.rates);
+    'click .js-display' (e, t) {
         alertify.alert(fa("eye", "Exchange"), renderTemplate(showTpl, this).html);
     }
 });
 
-// Insert
-insertTpl.onRendered(function () {
-    configDate();
-});
-
-insertTpl.helpers({
-    doc: function () {
-        var baseCurrency = Cpanel.Collection.Setting.findOne().baseCurrency;
+// New
+newTpl.helpers({
+    doc () {
+        let khr = 0, usd = 0, thb = 0;
+        let baseCurrency = Cpanel.Collection.Setting.findOne().baseCurrency;
 
         if (baseCurrency == 'KHR') {
-            var khr = 1;
+            khr = 1;
         } else if (baseCurrency == 'USD') {
-            var usd = 1;
+            usd = 1;
         } else {
-            var thb = 1;
+            thb = 1;
         }
 
         return {base: baseCurrency, khr: khr, usd: usd, thb: thb};
     }
 });
 
-// Update
-updateTpl.onRendered(function () {
-    configDate();
+// Edit
+editTpl.onCreated(function () {
+    let self = this;
+    self.autorun(function () {
+        self.subscribe('Cpanel.exchange', {_id: self.data._id});
+    });
+});
+
+editTpl.helpers({
+    data () {
+        let data = Cpanel.Collection.Exchange.findOne(this._id);
+        return data;
+    }
+});
+
+// Show
+showTpl.onCreated(function () {
+    let self = this;
+    self.autorun(function () {
+        self.subscribe('Cpanel.exchange', {_id: self.data._id});
+    });
+});
+
+showTpl.helpers({
+    data () {
+        let data = Cpanel.Collection.Exchange.findOne(this._id);
+        data.ratesVal = JSON.stringify(data.rates);
+        return data;
+    }
 });
 
 // Hook
 AutoForm.hooks({
-    cpanel_exchangeInsert: {
+    Cpanel_exchangeNew: {
         onSuccess: function (formType, result) {
             alertify.exchange().close();
             alertify.success('Success');
@@ -88,7 +107,7 @@ AutoForm.hooks({
             alertify.error(error.message);
         }
     },
-    cpanel_exchangeUpdate: {
+    Cpanel_exchangeEdit: {
         onSuccess: function (formType, error) {
             alertify.exchange().close();
             alertify.success('Success');
@@ -98,16 +117,3 @@ AutoForm.hooks({
         }
     }
 });
-
-// Config on rendered
-var configDate = function () {
-    var exDate = $('[name="exDate"]');
-    var khr = $('[name="rates.KHR"]');
-    var usd = $('[name="rates.USD"]');
-    var thb = $('[name="rates.THB"]');
-
-    DateTimePicker.date(exDate);
-    Inputmask.currency(khr, {prefix: 'R '});
-    Inputmask.currency(usd, {prefix: '$ '});
-    Inputmask.currency(thb, {prefix: 'B '});
-};
