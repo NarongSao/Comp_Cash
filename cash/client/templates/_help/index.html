@@ -1,0 +1,82 @@
+<template name="cash_help">
+    <!--Content-->
+    <div class="row MainContent">
+
+        <!--Main Content -->
+        <div class="col-xs-9">
+            <section id="welcome" class="group scrollto">
+                {{> cash_welcomeHelp}}
+            </section>
+            <section id="login" class="group scrollto">
+                {{> cash_loginHelp}}
+            </section>
+            <section id="home" class="group scrollto">
+                {{> cash_homeHelp}}
+            </section>
+            <section id="setting" class="group scrollto">
+                {{> cash_settingHelp}}
+            </section>
+            <section id="data" class="group scrollto">
+                {{> cash_dataHelp}}
+            </section>
+            <section id="transaction" class="group scrollto">
+                {{> cash_transactionHelp}}
+            </section>
+            <section id="report" class="group scrollto">
+                {{> cash_reportHelp}}
+            </section>
+            <section id="tool" class="group scrollto">
+                {{> cash_toolHelp}}
+            </section>
+        </div>
+
+
+        <!--Side Nav Bar -->
+        <nav class="col-xs-3 bs-docs-sidebar header-scroll" style="position: relative !important;">
+            <ul id="sidebar" class="nav nav-stacked fixed">
+                <li>
+                    <a href="#welcome">Welcome</a>
+                </li>
+                <li>
+                    <a href="#login">Login</a>
+                </li>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#setting">Setting</a>
+                    <ul class="nav nav-stacked">
+                        <li><a href="#setting1">Chart Account</a></li>
+                        <li><a href="#setting2">Exchange</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#data">Data</a>
+                    <ul class="nav nav-stacked">
+                        <li><a href="#data1">Staff</a></li>
+                        <li><a href="#data2">Opening&Closing Balance</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#transaction">Transaction</a>
+                </li>
+
+                <li>
+                    <a href="#report">Reports</a>
+                    <ul class="nav nav-stacked">
+                        <li><a href="#report1">Transaction</a></li>
+                        <li><a href="#report2">Income</a></li>
+                        <li><a href="#report3">Expense</a></li>
+                        <li><a href="#report4">Profit & Lost</a></li>
+                        <li><a href="#report5">Balance OutStanding</a></li>
+                    </ul>
+                </li>
+                <li><a href="#tool">Tool</a>
+                    <ul class="nav nav-stacked">
+                        <li><a href="#tool1">Help</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</template>
